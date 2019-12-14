@@ -1,0 +1,6 @@
+<div>
+  <img fxFlex="100" src="assets/images/got-map.png" id="map" alt="map">
+  <div *ngFor="let ad of ads">
+    <app-ad-render [position]="position" [ad]="ad"></app-ad-render>
+  </div>
+</div>

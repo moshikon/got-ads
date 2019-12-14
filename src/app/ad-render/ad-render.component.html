@@ -1,0 +1,13 @@
+<div *ngIf="ad != null">
+  <img *ngIf="ad.type === 'IMAGE'" [src]="ad.creative.url"
+       [style.left.px]="ad.coordinates.x"
+       [style.top.px]="ad.coordinates.y"
+       class="ad"
+       alt="img">
+  
+  <div *ngIf="ad.type === 'VIDEO'">
+    <video autoplay muted controls oncanplay="this.muted = true"
+           [src]="ad.creative.url" [style.left.px]="ad.coordinates.x"
+           [style.top.px]="ad.coordinates.y" class="ad"></video>
+  </div>
+</div>

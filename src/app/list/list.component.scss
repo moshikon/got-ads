@@ -1,0 +1,25 @@
+.ad-list{
+  margin-left: 20px;
+  .ad-list-title{
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .ad-list-text{
+    font-size: 12px;
+  }
+  .filter-box{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    width: 120px;
+  }
+  .insert-link{
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .icon-image {
+    height: 14px;
+    margin-left: 5px;
+  }
+}

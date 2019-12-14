@@ -1,0 +1,21 @@
+<div class="ad-list">
+  <p class="ad-list-title">Ads</p>
+  <div fxLayout="row">
+    <input class="filter-box" placeholder="Filter start" [(ngModel)]="filterStart">
+    <input class="filter-box" placeholder="Filter end" [(ngModel)]="filterEnd">
+  </div>
+  
+  <div fxLayout="row" fxFlexAlign="start start"
+       *ngFor="let ad of ads.slice().reverse() | filterAds: filterStart:filterEnd">
+    <span class="ad-list-text">{{ad.date | date:'mediumTime' }}</span>
+    <img class="icon-image" *ngIf="ad.type === 'IMAGE'"
+         src="assets/icons/image.svg" alt="img"/>
+    <img class="icon-image" *ngIf="ad.type === 'VIDEO'"
+         src="assets/icons/movie_creation.svg" alt="video"/>
+    <span class="ad-list-text">{{ad.creative.name}}</span>
+    <a class="insert-link" href="{{ad.creative.url}}" target="_blank">
+      <img src="assets/icons/insert_link.svg" alt="img"/>
+    </a>
+    <span class="ad-list-text">({{ad.coordinates.x}},{{ad.coordinates.y}})</span>
+  </div>
+</div>
