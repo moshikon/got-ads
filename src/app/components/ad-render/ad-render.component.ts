@@ -1,5 +1,5 @@
 import {ChangeDetectorRef, Component, Input, OnInit} from '@angular/core';
-import {AdData} from '../interface/ad/ad.interface';
+import {AdData} from '../../interfaces/ad/ad.interface';
 
 @Component({
   selector: 'app-ad-render',

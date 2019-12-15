@@ -1,6 +1,6 @@
 import {ChangeDetectorRef, Component, OnInit} from '@angular/core';
 import {adDispatcher} from 'ubimo-ad-dispatcher';
-import {AdData} from '../interface/ad/ad.interface';
+import {AdData} from '../../interfaces/ad/ad.interface';
 
 @Component({
   selector: 'app-got-ads',
